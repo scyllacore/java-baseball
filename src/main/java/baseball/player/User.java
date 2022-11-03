@@ -8,7 +8,11 @@ public class User {
     private List<Integer> userNumberList;
     private String inputNumber;
 
-    
+
+    public void setUser(String inputNumber){
+        this.inputNumber = inputNumber;
+        this.userNumberList = generateNumberList(this.inputNumber);
+    }
 
     private List<Integer> generateNumberList(String inputNumber) {
 
