@@ -9,11 +9,10 @@ import camp.nextstep.edu.missionutils.Randoms;
 
 public class Computer {
 
-    private List<Integer> computerNumberList;
+    private List<Integer> computerNumbers;
 
     public Computer() {
-        this.computerNumberList = generateRandomThreeNumbers();
-
+        this.computerNumbers = generateRandomThreeNumbers();
     }
 
     private List<Integer> generateRandomThreeNumbers() {
@@ -43,6 +42,6 @@ public class Computer {
     }
 
     public List<Integer> getComputerNumberList() {
-        return computerNumberList;
+        return computerNumbers;
     }
 }
