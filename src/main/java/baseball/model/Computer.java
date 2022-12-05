@@ -20,14 +20,14 @@ public class Computer {
 
         for (; numbers.size() < Constant.NUMBERS_SIZE; ) {
             int number = Randoms.pickNumberInRange(Constant.MIN_NUMBER, Constant.MAX_NUMBER);
-            if (isNoDuplication(numbers, number)) {
+            if (isNotDuplication(numbers, number)) {
                 numbers.add(number);
             }
         }
         return numbers;
     }
 
-    private boolean isNoDuplication(List<Integer> numbers, int number) {
+    private boolean isNotDuplication(List<Integer> numbers, int number) {
         return !numbers.contains(number);
     }
 
