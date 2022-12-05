@@ -5,7 +5,7 @@ import baseball.exception.IllegalArgument;
 import java.util.regex.Pattern;
 
 public class CommandInput {
-    private static final Pattern isOneOrTwo = Pattern.compile("[1-2]");
+    private static final Pattern isOneOrTwo = Pattern.compile("^[1-2]$");
 
     private final String command;
 

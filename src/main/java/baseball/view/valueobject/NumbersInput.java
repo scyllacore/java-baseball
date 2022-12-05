@@ -5,7 +5,7 @@ import baseball.exception.IllegalArgument;
 import java.util.regex.Pattern;
 
 public class NumbersInput {
-    private static final Pattern isThreeNumbersInRange = Pattern.compile("[1-9]{3}");
+    private static final Pattern isThreeNumbersInRange = Pattern.compile("^[1-9]{3}$");
 
     private final String numbers;
 
