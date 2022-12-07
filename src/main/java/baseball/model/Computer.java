@@ -31,11 +31,11 @@ public class Computer {
         return !numbers.contains(number);
     }
 
-    public boolean isSamePositionSameValue(int number, int position) {
+    public boolean isSamePositionSameValue(int position,int number) {
         return numbers.getNumbers().get(position) == number;
     }
 
-    public boolean isDifferentPositionSameValue(int number, int position) {
+    public boolean isDifferentPositionSameValue(int position,int number) {
         return numbers.getNumbers().get(position) != number
                 && numbers.getNumbers().contains(number);
     }

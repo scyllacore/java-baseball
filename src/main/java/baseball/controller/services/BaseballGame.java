@@ -24,14 +24,14 @@ public class BaseballGame {
     }
 
     private int countBall(User user, int position) {
-        if (computer.isDifferentPositionSameValue(user.pickNumber(position), position)) {
+        if (computer.isDifferentPositionSameValue(position, user.pickNumber(position))) {
             return Constant.COUNT_SUCCESS;
         }
         return Constant.COUNT_FAIL;
     }
 
     private int countStrike(User user, int position) {
-        if (computer.isSamePositionSameValue(user.pickNumber(position), position)) {
+        if (computer.isSamePositionSameValue(position, user.pickNumber(position))) {
             return Constant.COUNT_SUCCESS;
         }
         return Constant.COUNT_FAIL;
